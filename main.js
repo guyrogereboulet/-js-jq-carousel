@@ -2,13 +2,13 @@ $(document).ready(
   function() {
     $(".prev").click(
       function () {
-        clickNext();
+        clickPrev();
       }
     );
 
     $(".next").click(
       function () {
-        clickPrev();
+        clickNext();
       }
     );
   }
@@ -19,8 +19,8 @@ $(document).ready(
 
 ///////FUNCTIONS///////
 function clickNext() {
-  var imagActive = $("img.active");
-  var imageNext = imagActive.next();
+  var imageActive = $("img.active");
+  var imageNext = imageActive.next();
 
   if (imageActive.hasClass("last") == true) {
     imageActive.removeClass("active");
@@ -30,13 +30,8 @@ function clickNext() {
     imageNext.addClass("active");
   }
 
-
-
-
-
-
 }
 
 function clickPrev() {
- alert("click prev");
+
 }
