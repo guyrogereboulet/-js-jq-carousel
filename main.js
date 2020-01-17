@@ -18,8 +18,6 @@ $(document).ready(
 
 
 ///////FUNCTIONS///////
-
-
 function clickNext() {
   //Images//
   var imageActive = $("img.active");
